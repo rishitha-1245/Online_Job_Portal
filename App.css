@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0f2027;
+  color: white;
+}
+
+.nav {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ff4081;
+  font-weight: bold;
+}
+
+.link {
+  color: #00e5ff;
+  margin-left: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.marquee {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffff00;
+  background: #222;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  max-width: 700px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.image-grid img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #292929;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+.popup {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  padding: 2rem;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  z-index: 1000;
+  width: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, button {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="file"] {
+  background: #444;
+  color: white;
+}
+
+button {
+  background: #00e5ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00bcd4;
+}
